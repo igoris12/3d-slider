@@ -1,0 +1,54 @@
+.showcase {
+  background-color: black;
+  height: 100%;
+  position: relative;
+  color: white;
+  overflow: hidden;
+  &__content-wrapper {
+  }
+  &__video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.48;
+  }
+  &::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+    box-shadow: inset 0 0 500px black;
+  }
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-image: url('../../img/light.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center -65px;
+    z-index: 2;
+    animation: light 3s ease-in-out infinite;
+  }
+}
+
+// ANIMATIONS
+
+@keyframes light {
+  0% {
+    opacity: 0.2;
+  }
+  50% {
+    opacity: 0.3;
+  }
+  100% {
+    opacity: 0.2;
+  }
+}

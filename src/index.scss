@@ -1,0 +1,12 @@
+@import './style/root.scss';
+
+// stylesheets
+@import './style/restart.scss';
+@import './style/components/Showcase.scss';
+
+body,
+html,
+#root,
+.App {
+  height: 100%;
+}
