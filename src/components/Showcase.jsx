@@ -9,16 +9,15 @@ const Showcase = () => {
   return (
     <section className="showcase">
       <div className="showcase__content-wrapper">
-        <div className="showcase__content">
-          <video
-            src={backgroundVideo}
-            className="showcase__video"
-            autoPlay
-            loop
-            muted
-          ></video>
-        </div>
+        <div className="showcase__content">aaa</div>
       </div>
+      <video
+        src={backgroundVideo}
+        className="showcase__video"
+        autoPlay
+        loop
+        muted
+      ></video>
     </section>
   );
 };
