@@ -8,6 +8,9 @@ const Showcase = () => {
 
   return (
     <section className="showcase">
+      <h2 className="showcase__header">
+        Hoodie <span>Mantle</span>
+      </h2>
       <div className="showcase__content-wrapper">
         <div className="showcase__content">aaa</div>
       </div>

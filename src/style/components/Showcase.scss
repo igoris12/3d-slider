@@ -26,6 +26,21 @@
     animation: light 3s ease-in-out infinite;
   }
 
+  &__header {
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    z-index: 1;
+    font-family: 'assassin-st', sans-serif;
+    font-size: 32px;
+    top: 40px;
+    font-weight: 400;
+    color: rgba(white, $alpha: 0.75);
+    span {
+      color: $accentColor;
+    }
+  }
+
   &__content-wrapper {
     position: relative;
     height: 100%;
