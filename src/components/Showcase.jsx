@@ -1,5 +1,7 @@
+import 'swiper/css';
 import React, { useEffect } from 'react';
 import backgroundVideo from '../video/smoke-background-optimized.mp4';
+import { Swiper, SwiperSlide } from 'swiper/react';
 
 const Showcase = () => {
   useEffect(() => {
@@ -12,7 +14,16 @@ const Showcase = () => {
         Hoodie <span>Mantle</span>
       </h2>
       <div className="showcase__content-wrapper">
-        <div className="showcase__content">aaa</div>
+        <div className="showcase__content">
+          <div className="showcase__carousel">
+            <Swiper slidesPerView={3}>
+              <SwiperSlide>Slide 1</SwiperSlide>
+              <SwiperSlide>Slide 2</SwiperSlide>
+              <SwiperSlide>Slide 3</SwiperSlide>
+              <SwiperSlide>Slide 4</SwiperSlide>
+            </Swiper>
+          </div>
+        </div>
       </div>
       <video
         src={backgroundVideo}
