@@ -41,7 +41,14 @@
           }
         }
         p {
-          background-color: red;
+          position: absolute;
+          bottom: -85px;
+          width: 100%;
+          font-family: assassin-st, sans-serif;
+          font-size: 32px;
+          text-shadow: rgb(58, 78, 94) 0 0 10px;
+          color: rgba(255, 255, 255, 0.5);
+          z-index: 3;
         }
       }
 
