@@ -1,9 +1,12 @@
 import 'swiper/css';
+import img1 from '../img/1.png';
+import img2 from '../img/2.png';
+import img3 from '../img/3.png';
+import img4 from '../img/4.png';
 import React, { useEffect } from 'react';
 import backgroundVideo from '../video/smoke-background-optimized.mp4';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import ShowcaseImageWrapper from './ShowcaseImageWrapper';
-import img1 from '../img/1.png';
 const Showcase = () => {
   useEffect(() => {
     const video = (document.querySelector('video').playbackRate = 2);
@@ -26,16 +29,16 @@ const Showcase = () => {
               speed={1800}
             >
               <SwiperSlide>
-                <ShowcaseImageWrapper title="front" img={img1} />
+                <ShowcaseImageWrapper title="Front" img={img1} />
               </SwiperSlide>
               <SwiperSlide>
-                <ShowcaseImageWrapper title="front 2" img={img1} />
+                <ShowcaseImageWrapper title="Front Two" img={img2} />
               </SwiperSlide>
               <SwiperSlide>
-                <ShowcaseImageWrapper title="front" img={img1} />
+                <ShowcaseImageWrapper title="Side" img={img3} />
               </SwiperSlide>
               <SwiperSlide>
-                <ShowcaseImageWrapper title="front" img={img1} />
+                <ShowcaseImageWrapper title="Back" img={img4} />
               </SwiperSlide>
             </Swiper>
           </div>
