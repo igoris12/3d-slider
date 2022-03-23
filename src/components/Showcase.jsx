@@ -17,7 +17,14 @@ const Showcase = () => {
       <div className="showcase__content-wrapper">
         <div className="showcase__content">
           <div className="showcase__carousel">
-            <Swiper slidesPerView={3} spaceBetween={40}>
+            <Swiper
+              autoplay="ture"
+              slidesPerView={3}
+              spaceBetween={40}
+              loop="true"
+              centeredSlides="true"
+              speed={1800}
+            >
               <SwiperSlide>
                 <ShowcaseImageWrapper title="front" img={img1} />
               </SwiperSlide>
@@ -25,10 +32,10 @@ const Showcase = () => {
                 <ShowcaseImageWrapper title="front 2" img={img1} />
               </SwiperSlide>
               <SwiperSlide>
-                <ShowcaseImageWrapper title="front" img="null" />
+                <ShowcaseImageWrapper title="front" img={img1} />
               </SwiperSlide>
               <SwiperSlide>
-                <ShowcaseImageWrapper title="front" img="null" />
+                <ShowcaseImageWrapper title="front" img={img1} />
               </SwiperSlide>
             </Swiper>
           </div>

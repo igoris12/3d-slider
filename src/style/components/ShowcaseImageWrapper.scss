@@ -1,9 +1,13 @@
 .swiper-slide {
   opacity: 0.25;
+  transition: opacity 1.8s $transiton;
   .showcase__image {
     position: relative;
     height: calc(100vh - $padding * 2);
     text-align: center;
+    transform: scale(0.75);
+    transition: opacity 1.8s $transiton, transform 1.8s $transiton;
+
     .showcase__image__wrapper {
       & * {
         position: absolute;
@@ -22,7 +26,12 @@
       }
     }
   }
+
+  &.swiper-slide-active {
+    transition: opacity 1.8s $transiton;
+    opacity: 0.8;
+    .showcase__image {
+      transform: scale(0.98);
+    }
+  }
 }
-// .swiper-slide .swiper-slide-active {
-//   opacity: 1;
-// }
