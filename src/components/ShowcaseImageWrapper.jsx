@@ -11,7 +11,10 @@ const ShowcaseImageWrapper = ({ img, title }) => {
           ></div>
         </div>
         <div className="showcase__image__right">
-          {/* <div className="showcase__image"></div> */}
+          <div
+            className="showcase__image"
+            style={{ backgroundImage: `url(${img})` }}
+          ></div>
         </div>
       </div>
       <p className="title">{title}</p>
