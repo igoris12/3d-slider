@@ -1,11 +1,14 @@
+import React, { useEffect } from 'react';
 import 'swiper/css';
+import 'swiper/css/navigation';
 import img1 from '../img/1.png';
 import img2 from '../img/2.png';
 import img3 from '../img/3.png';
 import img4 from '../img/4.png';
-import React, { useEffect } from 'react';
 import backgroundVideo from '../video/smoke-background-optimized.mp4';
 import { Swiper, SwiperSlide } from 'swiper/react';
+import { Navigation } from 'swiper';
+
 import ShowcaseImageWrapper from './ShowcaseImageWrapper';
 const Showcase = () => {
   useEffect(() => {
@@ -21,12 +24,17 @@ const Showcase = () => {
         <div className="showcase__content">
           <div className="showcase__carousel">
             <Swiper
-              autoplay="ture"
+              // autoplay="ture"
+              loop="true"
+              modules={[Navigation]}
               slidesPerView={3}
               spaceBetween={40}
-              loop="true"
               centeredSlides="true"
               speed={1800}
+              navigation={{
+                nextEl: '.showcase__navigation_next',
+                prevEl: '.showcase__navigation_prev',
+              }}
             >
               <SwiperSlide>
                 <ShowcaseImageWrapper title="Front" img={img1} />
@@ -42,6 +50,10 @@ const Showcase = () => {
               </SwiperSlide>
             </Swiper>
           </div>
+        </div>
+        <div className="showcase__navigation">
+          <div className="showcase__navigation_prev"></div>
+          <div className="showcase__navigation_next"></div>
         </div>
       </div>
       <video

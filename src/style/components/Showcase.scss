@@ -3,7 +3,7 @@
   height: 100%;
   position: relative;
   color: white;
-  // overflow: hidden;
+  overflow: hidden;
   &::before {
     content: '';
     width: 100%;
@@ -58,6 +58,47 @@
       background-repeat: no-repeat;
       background-size: cover;
       animation: glow 1.8s ease-in-out infinite;
+    }
+    .showcase__navigation {
+      overflow: hidden;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      z-index: 2;
+      cursor: pointer;
+      * {
+        position: absolute;
+        height: 100%;
+        width: 50%;
+        outline: none;
+        &::before {
+          content: '?';
+          font-family: assassin-st;
+          opacity: 0;
+          transition: opacity 0.75s ease-in-out;
+          position: absolute;
+          transform: rotate(-90deg);
+          left: 50px;
+          top: 50%;
+          font-size: 45px;
+        }
+        &:hover::before {
+          opacity: 0.25;
+        }
+      }
+      .showcase__navigation_next {
+        right: 0;
+        &::before {
+          transform: rotate(90deg);
+          right: 50px;
+          left: auto;
+        }
+      }
+      .swiper-button-disabled {
+        display: none;
+      }
     }
   }
   &__video {
