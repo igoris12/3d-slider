@@ -1,4 +1,8 @@
+.swiper-wrapper {
+}
 .swiper {
+  transform: $transiton;
+
   &.swiper-initialized {
     overflow: visible;
 
