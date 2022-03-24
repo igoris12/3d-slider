@@ -1,15 +1,14 @@
 .swiper-wrapper {
+  transition: $transiton;
 }
 .swiper {
-  transform: $transiton;
-
   &.swiper-initialized {
     overflow: visible;
 
     .swiper-slide {
       position: relative;
       opacity: 0.25;
-      transition: opacity 1.8s $transiton;
+      transition: opacity 1.8s $transiton, transform 1.8s $transiton;
       &::after {
         content: '';
         width: 120px;
@@ -76,6 +75,7 @@
         transition: opacity 1.8s $transiton, transform 1.8s $transiton;
         opacity: 0.8;
         .showcase__image__container {
+          transition: opacity 1.8s $transiton, transform 1.8s $transiton;
           transform: scale(0.98);
         }
       }
