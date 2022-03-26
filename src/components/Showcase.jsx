@@ -22,9 +22,9 @@ const Showcase = () => {
         <div className="showcase__content">
           <div className="showcase__carousel">
             <Swiper
-              // loop="true"
+              loop="true"
               modules={[Navigation, Autoplay]}
-              autoplay={{ delay: 3000 }}
+              autoplay={{ delay: 4000 }}
               slidesPerView={3}
               spaceBetween={40}
               centeredSlides="true"
