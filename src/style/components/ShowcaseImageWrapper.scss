@@ -8,7 +8,7 @@
     .swiper-slide {
       position: relative;
       opacity: 0.25;
-      transition: opacity 1.8s $transiton, transform 1.8s $transiton;
+      transition: 1.8s $transiton;
       &::after {
         content: '';
         width: 120px;
@@ -23,7 +23,7 @@
         height: calc(100vh - $padding * 2);
         text-align: center;
         transform: scale(0.75);
-        transition: opacity 1.8s $transiton, transform 1.8s $transiton;
+        transition: 1.8s $transiton;
 
         .showcase__image__wrapper {
           & * {
@@ -72,10 +72,10 @@
       }
 
       &.swiper-slide-active {
-        transition: opacity 1.8s $transiton, transform 1.8s $transiton;
+        transition: 1.8s $transiton;
         opacity: 0.8;
         .showcase__image__container {
-          transition: opacity 1.8s $transiton, transform 1.8s $transiton;
+          transition: 1.8s $transiton;
           transform: scale(0.98);
         }
       }
