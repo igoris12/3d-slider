@@ -1,13 +1,11 @@
 import React, { useEffect } from 'react';
-import 'swiper/css';
-import 'swiper/css/navigation';
 import img1 from '../img/1.png';
 import img2 from '../img/2.png';
 import img3 from '../img/3.png';
 import img4 from '../img/4.png';
 import backgroundVideo from '../video/smoke-background-optimized.mp4';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation } from 'swiper';
+import { Navigation, Autoplay } from 'swiper';
 
 import ShowcaseImageWrapper from './ShowcaseImageWrapper';
 const Showcase = () => {
@@ -24,9 +22,9 @@ const Showcase = () => {
         <div className="showcase__content">
           <div className="showcase__carousel">
             <Swiper
-              // autoplay="ture"
               loop="true"
-              modules={[Navigation]}
+              modules={[Navigation, Autoplay]}
+              autoplay={{ delay: 4000 }}
               slidesPerView={3}
               spaceBetween={40}
               centeredSlides="true"
