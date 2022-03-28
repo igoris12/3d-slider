@@ -76,6 +76,16 @@
           transform: scale(0.98);
         }
       }
+
+      &.swiper-slide-duplicate-active {
+        transition: 1.8s $transiton;
+        opacity: 0.8;
+
+        .showcase__image__container {
+          transition: 1.8s $transiton;
+          transform: scale(0.98);
+        }
+      }
     }
   }
 }
