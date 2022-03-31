@@ -19,6 +19,9 @@ Project published at link: https://igoris12.github.io/3d-slider/
 * Swiperjs
 * Sass
 
+### Work on project
+3/15/2022 - 3/27/2022
+
 ## Authors
 
 [Igoris](https://github.com/igoris12)
